@@ -54,8 +54,8 @@ func callbackHandler(w http.ResponseWriter, r *http.Request) {
 				if err != nil {
 					log.Println("Quota err:", err)
 				}
-				if message.Text == “你好”{
-					if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage(“早安河河河～～”+“快遲到了你還在睡？”+“快點來計個時！！！”)).Do(); err != nil {
+				if message.Text == "你好"{
+					if _, err = bot.ReplyMessage(event.ReplyToken, linebot.NewTextMessage("早安河河河～～"+"快遲到了你還在睡？"+"快點來計個時！！！")).Do(); err != nil {
 					log.Print(err)
 					}
 				}
